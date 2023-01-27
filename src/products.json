@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "type": "sneakers",
+        "name": "adidas YEEZY 700 V3 'Arzareth'",
+        "desc": "",
+        "image1": "pexels-luis-quintero-14212622.jpg",
+        "image2": "pexels-luis-quintero-14261890.jpg",
+        "image3": "pexels-luis-quintero-14261893.jpg",
+        "price": 200,
+        "category": "newArrivals"
+    },
+    {
+        "id": 2,
+        "type": "sneakers",
+        "name": "adidas super star",
+        "desc": "",
+        "image1": "pexels-mateus-carvalho-8378567-3.png",
+        "image2": "pexels-mateus-carvalho-8378567-2.png",
+        "image3": "pexels-mateus-carvalho-8378567-1.png",
+        "price": 79,
+        "category": "topRated"
+    },
+    {
+        "id": 3,
+        "type": "sneakers",
+        "name": "Nike Air Max 270",
+        "desc": "",
+        "image1": "pexels-melvin-buezo-2529148.jpg",
+        "image2": "pexels-melvin-buezo-2529147.jpg",
+        "image3": "pexels-melvin-buezo-2529146.jpg",
+        "price": 160,
+        "category": "bestSellers"
+    },
+    {
+        "id": 4,
+        "type": "sneakers",
+        "name": "Adidas YEEZY 350 Boost v2 Zebra",
+        "desc": "",
+        "image1": "pexels-terrance-barksdale-11820507-1.png",
+        "image2": "pexels-terrance-barksdale-11820507-2.png",
+        "image3": "pexels-terrance-barksdale-11820507-3.png",
+        "price": 230,
+        "category": "bestSellers"
+    },
+    {
+        "id": 5,
+        "type": "sneakers",
+        "name": "PUMA Rider Future Vintage Sneakers",
+        "desc": "",
+        "image1": "pexels-wallace-chuck-8473482.jpg",
+        "image2": "pexels-wallace-chuck-8473511.jpg",
+        "image3": "pexels-wallace-chuck-8473579.jpg",
+        "price": 90,
+        "category": "topRated"
+    },
+    {
+        "id": 6,
+        "type": "sneakers",
+        "name": "Nike Waffle Debut",
+        "desc": "",
+        "image1": "pexels-aman-jakhar-11582352.jpg",
+        "image2": "pexels-aman-jakhar-11582351.jpg",
+        "image3": "pexels-aman-jakhar-11582344.jpg",
+        "price": 120,
+        "category": "newArrivals"
+    },
+    {
+        "id": 7,
+        "type": "sneakers",
+        "name": "Nike Dunk Low",
+        "desc": "",
+        "image1": "pexels-terrance-barksdale-11737178.jpg",
+        "image2": "pexels-terrance-barksdale-11737179.jpg",
+        "image3": "pexels-terrance-barksdale-11737227.jpg",
+        "price": 100,
+        "category": "bestSellers"
+    },
+    {
+        "id": 8,
+        "type": "sneakers",
+        "name": "Nike Air Griffey Max 1",
+        "desc": "",
+        "image1": "pexels-terrance-barksdale-12879626.jpg",
+        "image2": "pexels-terrance-barksdale-12879627.jpg",
+        "image3": "pexels-terrance-barksdale-12879628.jpg",
+        "price": 150,
+        "category": "topRated"
+    },
+    {
+        "id": 9,
+        "type": "sneakers",
+        "name": "Nike Dunk Low Retro",
+        "desc": "",
+        "image1": "pexels-terrance-barksdale-12891493.jpg",
+        "image2": "pexels-terrance-barksdale-12891458.jpg",
+        "image3": "pexels-terrance-barksdale-12891494.jpg",
+        "price": 99,
+        "category": "newArrivals"
+    },
+    {
+        "id": 10,
+        "type": "sneakers",
+        "name": "Nike Court Vision Low",
+        "desc": "",
+        "image1": "pexels-terrance-barksdale-13288275.jpg",
+        "image2": "pexels-terrance-barksdale-13288274.jpg",
+        "image3": "pexels-terrance-barksdale-13288276.jpg",
+        "price": 89,
+        "category": "bestSellers"
+    }
+]

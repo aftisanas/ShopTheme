@@ -1,0 +1,306 @@
+@import '../../../scss/variables/variables';
+@import '../../../scss/responsive/responsive';
+
+/**************** hero section started *****************/
+.HeroSection {
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+            to right,
+            rgba($color: #ccc, $alpha: .2)
+            ,
+            rgba($color: #eee, $alpha: .2)
+        ),
+        url('../imgs/heroImage.jpg');
+
+        background-size: cover;
+
+        @include desktop {
+            background-position: center;
+        }
+
+    &__title {
+        font-size: $h2Title;
+        font-family: $Inria;
+        font-weight: 700;
+        color: $whiteColor;
+        margin: 2rem auto;
+        width: 50%;
+        text-align: center;
+
+        @include desktop {
+            width: 80%;
+        }
+
+        @include mobile {
+            width: 100%;
+            font-size: $h3Title;
+        }
+    }
+
+    &__cta {
+        background-color: $whiteColor;
+        border: none;
+        padding: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        
+        &:hover {
+            cursor: pointer;
+            opacity: .9;
+        }
+
+        @include tablet {
+            font-size: $pText;
+        }
+
+
+    }
+}
+/**************** hero section ended *****************/
+
+/**************** popular section started *****************/
+.popular {
+    width: 100%;
+    margin: 2rem auto 3rem;
+
+    &__title {
+        text-align: center;
+        font-size: $h2Title;
+        font-family: $Inria;
+        margin: 3rem auto;
+        width: 50%;
+
+        @include desktop {
+            width: 85%;
+        }
+
+        @include mobile {
+            margin: 1.5rem auto;
+            width: 100%;
+            font-size: calc($h3Title - .8rem);
+        }
+    }
+
+    .popular__content{
+        width: 70%;
+        margin: 0 auto;
+        height: 54vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        @include desktop {
+            width: 90%;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            height: 150vh;
+
+        }
+
+        &__item{
+            position: relative;
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+
+            &:nth-child(1) {
+                background-image: url('../imgs/dynamic-wang-ISrx6MJ7XXI-unsplash.jpg');
+            }
+            &:nth-child(2) {
+                background-image: url('../imgs/ivan-kazlouskij-AQbu1ttbw9E-unsplash.jpg');
+            }
+            &:nth-child(3) {
+                background-image: url('../imgs/mbardo-CmWVrJ7CpFY-unsplash.jpg');
+            }
+
+            @include mobile {
+                width: 90%;
+                height: 100%;
+            }
+
+            &:hover {
+                opacity: .96;
+                cursor: pointer;
+            }
+
+            &__title {
+                color: $whiteColor;
+                font-family: $Cairo;
+                letter-spacing: .01rem;
+                font-weight: 100;
+                
+                @include tablet {
+                    font-size: calc($pText + .2rem);
+                }
+            }
+    
+            // img {
+            //     width: 100%;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     aspect-ratio: 3/2;
+            //     object-fit: cover;
+            //     z-index: -1;
+
+            //     @include mobile {
+            //     }
+            // }
+        }
+    }
+}
+
+/******************* BANNER SECTION STARTED ********************/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    @include tablet {
+        flex-direction: column;
+    }
+
+    &__text {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // margin-block-start: 4rem;
+        gap: 1rem;
+        padding: 1rem 0;
+        text-align: center;
+
+        &:nth-child(1) {
+            background: url('../imgs/mike-von-rj8ohjW9RBA-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        &:nth-child(3) {
+            background: url('../imgs/model-1.png');
+            background-size: cover;
+            background-position: center;
+        }
+        &__Subtitle{
+            font-size: calc($h3Title - .6rem);
+            font-family: $Inria;
+        }
+        &__title {
+            font-size: calc($h3Title - .3rem);
+            font-family: $Inria;
+        }
+
+        &__txt {
+            font-size: $pText;
+            font-family: $Cairo;
+        }
+
+        &__cta {
+            padding: .35rem .9rem;
+            font-weight: bold;
+            font-family: $Cairo;
+            border: none;
+            font-size: $pText;
+        }
+    }
+}
+
+.first {
+    background-color: $AmberYellow;
+    color: $lightGray;
+}
+.second {
+    background-color: $slate400;
+    button {
+        background-color: $neutralBlack;
+        color: $lightGray;
+    }
+}
+/******************* BANNER SECTION ENDED ********************/
+
+/******************** EMAIL SECTION STARTED *******************/
+.email {
+    background-color: $AmberYellow;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    padding: 3rem 0;
+    @include tablet {
+        flex-direction: column;
+    }
+    &__title {
+        width: 22%;
+        font-size: calc($h3Title - .3rem);
+        font-family: $Inria;
+        line-height: 1.2;
+        @include desktop {
+            width: 35%;
+        }
+        @include tablet {
+            width: 90%;
+        }
+    }
+    &__info {
+        width: 35%;
+        font-size: calc($pText - .15rem);
+        
+        @include desktop {
+            width: 48%;
+        }
+        @include tablet {
+            width: 85%;
+        }
+        @include mobile {
+            width: 95%;
+        }
+        &__userEmail {
+            border: 1px solid $neutralBlack;
+            padding: .5rem;
+            font-family: $Cairo;
+            font-weight: 600;
+            width: 80%;
+            margin-block-end: 1rem;
+            font-size: calc($pText - .15rem);
+
+        }
+
+        &__cta {
+            background-color: $neutralBlack;
+            padding: .55rem;
+            margin-inline-start: 1rem;
+            color: $lightGray;
+            font-family: $Cairo;
+            font-size: calc($pText - .15rem);
+            cursor: pointer;
+            border: none;
+
+            @include tablet {
+                font-size: calc($pText - .15rem);
+            }
+
+            &:hover {
+                opacity: .98;
+            }
+        }
+    }
+
+
+}
+/******************** EMAIL SECTION ENDED *******************/

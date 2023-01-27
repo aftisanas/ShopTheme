@@ -1,0 +1,24 @@
+$desktopWidth: 64em;
+$tabletWidth: 51.5em;
+$mobileWidth: 34em;
+
+// desktop
+@mixin desktop {
+    @media screen and (max-width: $desktopWidth) {
+        @content;
+    }
+}
+
+// tablet
+@mixin tablet {
+    @media screen and (max-width: $tabletWidth) {
+        @content;
+    }
+}
+
+// mobile
+@mixin mobile {
+    @media screen and (max-width: $mobileWidth) {
+        @content;
+    }
+}

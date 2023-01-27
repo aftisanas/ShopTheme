@@ -1,0 +1,289 @@
+/**************** hero section started *****************/
+.HeroSection {
+  width: 100%;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(204, 204, 204, 0.2), rgba(238, 238, 238, 0.2)), url("../imgs/heroImage.jpg");
+  background-size: cover;
+}
+@media screen and (max-width: 64em) {
+  .HeroSection {
+    background-position: center;
+  }
+}
+.HeroSection__title {
+  font-size: 2.441rem;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin: 2rem auto;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 64em) {
+  .HeroSection__title {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 34em) {
+  .HeroSection__title {
+    width: 100%;
+    font-size: 1.953rem;
+  }
+}
+.HeroSection__cta {
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.HeroSection__cta:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+@media screen and (max-width: 51.5em) {
+  .HeroSection__cta {
+    font-size: 1rem;
+  }
+}
+
+/**************** hero section ended *****************/
+/**************** popular section started *****************/
+.popular {
+  width: 100%;
+  margin: 2rem auto 3rem;
+}
+.popular__title {
+  text-align: center;
+  font-size: 2.441rem;
+  font-family: "Inria Sans", sans-serif;
+  margin: 3rem auto;
+  width: 50%;
+}
+@media screen and (max-width: 64em) {
+  .popular__title {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 34em) {
+  .popular__title {
+    margin: 1.5rem auto;
+    width: 100%;
+    font-size: 1.153rem;
+  }
+}
+.popular .popular__content {
+  width: 70%;
+  margin: 0 auto;
+  height: 54vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (max-width: 64em) {
+  .popular .popular__content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 34em) {
+  .popular .popular__content {
+    flex-direction: column;
+    height: 150vh;
+  }
+}
+.popular .popular__content__item {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+.popular .popular__content__item:nth-child(1) {
+  background-image: url("../imgs/dynamic-wang-ISrx6MJ7XXI-unsplash.jpg");
+}
+.popular .popular__content__item:nth-child(2) {
+  background-image: url("../imgs/ivan-kazlouskij-AQbu1ttbw9E-unsplash.jpg");
+}
+.popular .popular__content__item:nth-child(3) {
+  background-image: url("../imgs/mbardo-CmWVrJ7CpFY-unsplash.jpg");
+}
+@media screen and (max-width: 34em) {
+  .popular .popular__content__item {
+    width: 90%;
+    height: 100%;
+  }
+}
+.popular .popular__content__item:hover {
+  opacity: 0.96;
+  cursor: pointer;
+}
+.popular .popular__content__item__title {
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 0.01rem;
+  font-weight: 100;
+}
+@media screen and (max-width: 51.5em) {
+  .popular .popular__content__item__title {
+    font-size: 1.2rem;
+  }
+}
+
+/******************* BANNER SECTION STARTED ********************/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+@media screen and (max-width: 51.5em) {
+  .banner {
+    flex-direction: column;
+  }
+}
+.banner__text {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.banner__text:nth-child(1) {
+  background: url("../imgs/mike-von-rj8ohjW9RBA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner__text:nth-child(3) {
+  background: url("../imgs/model-1.png");
+  background-size: cover;
+  background-position: center;
+}
+.banner__text__Subtitle {
+  font-size: 1.353rem;
+  font-family: "Inria Sans", sans-serif;
+}
+.banner__text__title {
+  font-size: 1.653rem;
+  font-family: "Inria Sans", sans-serif;
+}
+.banner__text__txt {
+  font-size: 1rem;
+  font-family: "Cairo", sans-serif;
+}
+.banner__text__cta {
+  padding: 0.35rem 0.9rem;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+  border: none;
+  font-size: 1rem;
+}
+
+.first {
+  background-color: #facc15;
+  color: #F6F6F6;
+}
+
+.second {
+  background-color: #94a3b8;
+}
+.second button {
+  background-color: #262626;
+  color: #F6F6F6;
+}
+
+/******************* BANNER SECTION ENDED ********************/
+/******************** EMAIL SECTION STARTED *******************/
+.email {
+  background-color: #facc15;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+@media screen and (max-width: 51.5em) {
+  .email {
+    flex-direction: column;
+  }
+}
+.email__title {
+  width: 22%;
+  font-size: 1.653rem;
+  font-family: "Inria Sans", sans-serif;
+  line-height: 1.2;
+}
+@media screen and (max-width: 64em) {
+  .email__title {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 51.5em) {
+  .email__title {
+    width: 90%;
+  }
+}
+.email__info {
+  width: 35%;
+  font-size: 0.85rem;
+}
+@media screen and (max-width: 64em) {
+  .email__info {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 51.5em) {
+  .email__info {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 34em) {
+  .email__info {
+    width: 95%;
+  }
+}
+.email__info__userEmail {
+  border: 1px solid #262626;
+  padding: 0.5rem;
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  width: 80%;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  font-size: 0.85rem;
+}
+.email__info__cta {
+  background-color: #262626;
+  padding: 0.55rem;
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+  color: #F6F6F6;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 51.5em) {
+  .email__info__cta {
+    font-size: 0.85rem;
+  }
+}
+.email__info__cta:hover {
+  opacity: 0.98;
+}
+
+/******************** EMAIL SECTION ENDED *******************//*# sourceMappingURL=home.css.map */

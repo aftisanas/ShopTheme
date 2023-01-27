@@ -1,0 +1,239 @@
+@import '../../../scss/variables/variables';
+@import '../../../scss/responsive/responsive';
+
+// WISHLIST PAGE
+.Wishlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1.5rem;
+
+    h1 {
+        font-size: $h3Title;
+        font-family: $Inria;
+    }
+
+    &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        
+        &__btn {
+            background-color: $whiteColor;
+            border: 1px solid $slate400;
+            padding: .7rem;
+            border-radius: $BR11;
+            cursor: pointer;
+            &:hover {
+                background-color: $lightGray;
+            }
+        }
+    }
+}
+
+.items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 1.5rem;
+    @include tablet {
+        flex-direction: column;
+    }
+
+    &__card {
+        width: 50%;
+        @include tablet {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-family: $Inria;
+            font-size: calc($h3Title - .6rem);
+            margin: .5rem 0;
+            @include tablet {
+                font-size: $h3Title;
+            }
+        }
+
+        p {
+            font-size: $pText;
+            font-family: $Cairo;
+            @include tablet {
+                font-size: calc($pText + .4rem);
+            }
+            
+            &:last-child {
+                font-weight: 900;
+            }
+        }
+
+        &__Add {
+            background-color: $neutralBlack;
+            padding: .5rem;
+            margin: 1rem 0;
+            color: $lightGray;
+            font-family: $Cairo;
+            font-size: calc($pText - .15rem);
+            width: 10rem;
+            cursor: pointer;
+            border: none;
+
+            @include tablet {
+                width: 17rem;
+                font-size: calc($pText + .4rem);
+            }
+
+            &:hover {
+                opacity: .88;
+            }
+        }
+
+        &__remove {
+            background-color: $lightGray;
+            padding: .5rem;
+            margin: 1rem 0.4rem ;
+            color: $neutralBlack;
+            font-family: $Cairo;
+            font-size: calc($pText - .15rem);
+            width: 10rem;
+            cursor: pointer;
+            border: none;
+
+            @include tablet {
+                width: 17rem;
+                font-size: calc($pText + .4rem);
+            }
+        }
+    }
+}
+
+// CART PAGE
+.cart{
+    overflow-x: auto;
+    padding: 1rem 2rem;
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        caption {
+            font-size: $h3Title;
+            font-family: $Inria;
+            margin: 1rem auto;
+        }
+
+        tr{
+            &:nth-child(even) {
+                background-color: $lightGray;
+            }
+        }
+        td, th {
+            border: 1px solid $slate400;
+            padding: 1rem;
+            text-align: start;
+
+        }
+        th {
+            font-family: $Inria;
+            font-size: calc($pText + .4rem);
+            background-color: $skyBlue;
+        }
+        td {
+            font-family: $Cairo;
+            font-size: calc($pText + .2rem);
+            width: 30%;
+
+            img {
+                width: 70%;
+                aspect-ratio: 3/2;
+                object-fit: contain;
+                text-align: center;
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__delete {
+            background-color: $lightGray;
+            padding: .5rem;
+            margin: 1rem 0;
+            color: $neutralBlack;
+            font-family: $Cairo;
+            font-size: calc($pText - .15rem);
+            width: 10rem;
+            cursor: pointer;
+            border: none;
+
+            @include tablet {
+                width: 17rem;
+                font-size: calc($pText + .4rem);
+            }
+        }
+
+        &__bold {
+            font-weight: 700;
+            color: $neutralBlack;
+        }
+    }
+
+    &__total {
+        width: 30%;
+        margin: 4rem 0;
+        padding: 1rem 2rem;
+
+        @include desktop {
+            width: 50%;
+        }
+
+        @include tablet {
+            width: 75%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+        &__title {
+            font-family: $Inria;
+            font-size: calc($h3Title - .3rem);
+            margin: 1rem 0;
+        }
+        &__sub {
+            background-color: $slate400;
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1.5rem 0;
+                padding: .5rem;
+
+                .total {
+                    font-family: $Cairo;
+                    font-weight: 700;
+                    font-size: calc($pText + .2rem);
+                }
+
+            }
+        }
+
+        &__cta {
+            background-color: $neutralBlack;
+                padding: .5rem;
+                color: $lightGray;
+                font-family: $Cairo;
+                font-size: calc($pText + .1rem);
+                width: 10rem;
+                cursor: pointer;
+                border: none;
+
+                &:hover {
+                    opacity: .88;
+                }
+        }
+    }
+}

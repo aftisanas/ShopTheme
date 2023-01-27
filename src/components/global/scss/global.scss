@@ -1,0 +1,137 @@
+@import '../../../scss/variables/variables';
+@import '../../../scss/responsive/responsive';
+
+// announcement
+.announcement {
+    background-color: $neutralBlack;
+    color: $whiteColor;
+    font-family: $Cairo;
+    font-size: calc($pText - .13rem);
+    padding: .8rem 0;
+    text-align: center;
+}
+
+// nav bar
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 1.5rem;
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .nav-title {
+        margin-right: 6rem;
+        font-size: $h3Title;
+        font-family: $Inria;
+        cursor: pointer;
+
+        @include tablet {
+            margin-right: 4rem;
+            font-size: calc($h3Title - .3rem);
+        }
+
+        @include mobile {
+            margin-right: 0;
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        font-family: $Cairo;
+    
+        a {
+            text-decoration: none;
+            color: $neutralBlack;
+            font-weight: 700;
+            font-size: 1.1rem;
+
+            @include tablet {
+                font-size: 1rem;
+            }
+
+            ion-icon{
+                @include mobile {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+    }
+}
+
+.element {
+    position: relative;
+}
+
+.element::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $AmberYellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************** FOOTER STARTED********************/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.5rem;
+
+    font-family: $Cairo;
+    font-size: $pText;
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        ul {
+            list-style-type: none;
+            li {
+                margin: .5rem 0;
+                cursor: pointer;
+                &:first-child {
+                    font-family: $Inria;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &__cpy {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $neutralBlack;
+        flex-wrap: wrap;
+        padding-block-start: 1.5rem;
+        @include mobile {   
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+}
+/****************** FOOTER ENDED********************/

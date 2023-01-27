@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+@media screen and (max-width: 51.5em) {
+  * {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 34em) {
+  * {
+    font-size: 83%;
+  }
+}/*# sourceMappingURL=App.css.map */

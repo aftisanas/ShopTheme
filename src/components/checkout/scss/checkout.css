@@ -1,0 +1,230 @@
+.Wishlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1.5rem;
+}
+.Wishlist h1 {
+  font-size: 1.953rem;
+  font-family: "Inria Sans", sans-serif;
+}
+.Wishlist__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.Wishlist__cta__btn {
+  background-color: #fff;
+  border: 1px solid #94a3b8;
+  padding: 0.7rem;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.Wishlist__cta__btn:hover {
+  background-color: #F6F6F6;
+}
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 1.5rem;
+}
+@media screen and (max-width: 51.5em) {
+  .items {
+    flex-direction: column;
+  }
+}
+.items__card {
+  width: 50%;
+}
+@media screen and (max-width: 51.5em) {
+  .items__card {
+    width: 100%;
+  }
+}
+.items__card img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.items__card h1 {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.353rem;
+  margin: 0.5rem 0;
+}
+@media screen and (max-width: 51.5em) {
+  .items__card h1 {
+    font-size: 1.953rem;
+  }
+}
+.items__card p {
+  font-size: 1rem;
+  font-family: "Cairo", sans-serif;
+}
+@media screen and (max-width: 51.5em) {
+  .items__card p {
+    font-size: 1.4rem;
+  }
+}
+.items__card p:last-child {
+  font-weight: 900;
+}
+.items__card__Add {
+  background-color: #262626;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #F6F6F6;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.85rem;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 51.5em) {
+  .items__card__Add {
+    width: 17rem;
+    font-size: 1.4rem;
+  }
+}
+.items__card__Add:hover {
+  opacity: 0.88;
+}
+.items__card__remove {
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+  margin: 1rem 0.4rem;
+  color: #262626;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.85rem;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 51.5em) {
+  .items__card__remove {
+    width: 17rem;
+    font-size: 1.4rem;
+  }
+}
+
+.cart {
+  overflow-x: auto;
+  padding: 1rem 2rem;
+}
+.cart__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart__table caption {
+  font-size: 1.953rem;
+  font-family: "Inria Sans", sans-serif;
+  margin: 1rem auto;
+}
+.cart__table tr:nth-child(even) {
+  background-color: #F6F6F6;
+}
+.cart__table td, .cart__table th {
+  border: 1px solid #94a3b8;
+  padding: 1rem;
+  text-align: start;
+}
+.cart__table th {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.4rem;
+  background-color: #7dd3fc;
+}
+.cart__table td {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.2rem;
+  width: 30%;
+}
+.cart__table td img {
+  width: 70%;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  text-align: center;
+}
+@media screen and (max-width: 34em) {
+  .cart__table td img {
+    width: 100%;
+  }
+}
+.cart__table__delete {
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #262626;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.85rem;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 51.5em) {
+  .cart__table__delete {
+    width: 17rem;
+    font-size: 1.4rem;
+  }
+}
+.cart__table__bold {
+  font-weight: 700;
+  color: #262626;
+}
+.cart__total {
+  width: 30%;
+  margin: 4rem 0;
+  padding: 1rem 2rem;
+}
+@media screen and (max-width: 64em) {
+  .cart__total {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 51.5em) {
+  .cart__total {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 34em) {
+  .cart__total {
+    width: 100%;
+  }
+}
+.cart__total__title {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.653rem;
+  margin: 1rem 0;
+}
+.cart__total__sub {
+  background-color: #94a3b8;
+}
+.cart__total__sub__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+}
+.cart__total__sub__item .total {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.cart__total__cta {
+  background-color: #262626;
+  padding: 0.5rem;
+  color: #F6F6F6;
+  font-family: "Cairo", sans-serif;
+  font-size: 1.1rem;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+}
+.cart__total__cta:hover {
+  opacity: 0.88;
+}/*# sourceMappingURL=checkout.css.map */
