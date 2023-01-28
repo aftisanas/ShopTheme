@@ -1,7 +1,7 @@
 # SHOP THEME
 
 It is a react e-commerce web application that allows users to to browse and purchase products. 
-It's build using React, Redux toolkit, React-router-dom, React-multi-carousel, react-multi-carousel
+It's build using React, Redux toolkit, React-router-dom, React-multi-carousel, react-paypal-js
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/aftisanas/ShopTheme.git`
