@@ -12,7 +12,6 @@ import Cart from './components/checkout/Cart';
 import Wishlist from './components/checkout/Wishlist';
 import Footer from './components/global/Footer';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
-
 function App() {
   // DISPATCH
   const dispatch = useDispatch();
